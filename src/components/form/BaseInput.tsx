@@ -6,12 +6,14 @@ type IBaseInput = {
 
 export default function BaseInput({
     error = "",
-    type = "text"
+    type = "text",
+    label = ""
 }: IBaseInput) {
     return (
-        <div>
+        <label>
+            {label && <div className="text-slate-600 mb-1">{label}</div>}
             <input
-                className={`outline-none appearance-none border rounded px-5 text-sm pt-2 pb-3 w-full h-13 ${error
+                className={`outline-none appearance-none border rounded px-5 pt-2 pb-3 w-full h-13 ${error
                     ? "border-red-600 focus:border-red-300 focus:ring-1 focus:ring-red-300"
                     : "border-gray-200 focus:border-blue-200 focus:ring-1 focus:ring-blue-200"
                     }`}
@@ -19,6 +21,6 @@ export default function BaseInput({
             />
 
             {error && <p className="text-red-600 text-xs pt-1">{error}</p>}
-        </div >
+        </label >
     )
 }

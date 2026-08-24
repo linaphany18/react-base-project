@@ -15,7 +15,7 @@ export default function Test() {
                         <BaseFieldLabelInputPassword label="Password"/>
                     </div>
 
-                    <BaseInput />
+                    <BaseInput label="Account"/>
                 </form>
             </div>
         </div>
