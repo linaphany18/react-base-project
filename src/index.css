@@ -3,6 +3,8 @@
 
 @theme {
   --font-sans: "Poppins", sans-serif;
+
+  --color-primary: #1A2674;
 }
 
 * {

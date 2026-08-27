@@ -1,10 +1,10 @@
-import Test from "./components/Test"
+import Layout from "./components/layout/Layout"
 
 function App() {
-
   return (
     <>
-      <Test />
+      <Layout>
+      </Layout>
     </>
   )
 }
